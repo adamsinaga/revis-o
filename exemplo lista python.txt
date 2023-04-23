@@ -1,0 +1,7 @@
+lista = ["uva", ["mamão", ("pera", "abacate")]]
+print(lista[-1][1][0])
+
+'''Onde "lista[-1]" se refere ao último elemento da lista "lista", que é a lista ["mamão", ("pera", "abacate")]. 
+Já "lista[-1][1]" se refere ao segundo elemento dessa lista, que é a tupla ("pera", "abacate").
+ Por fim, "lista[-1][1][0]" se refere ao primeiro elemento dessa tupla, que é a string "pera".
+Portanto, a saída do programa será a string "pera" '''
