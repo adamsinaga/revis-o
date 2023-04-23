@@ -1,0 +1,22 @@
+public class ExemploOrdenacaoJava {
+    public static void main(String[] args) {
+        int[] numArray = {10,6,15,4,1,45};
+        
+        // Ordena o array em ordem crescente utilizando Bubble Sort
+        int n = numArray.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (numArray[j] > numArray[j+1]) {
+                    int temp = numArray[j];
+                    numArray[j] = numArray[j+1];
+                    numArray[j+1] = temp;
+                }
+            }
+        }
+        
+        // Imprime o array ordenado
+        for (int i = 0; i < numArray.length; i++) {
+            System.out.print(numArray[i] + " ");
+        }
+    }
+}
